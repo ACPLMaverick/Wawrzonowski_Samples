@@ -1,0 +1,1231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_TCS|Win32">
+      <Configuration>Debug_TCS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_TCS|x64">
+      <Configuration>Debug_TCS</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_TCS|Win32">
+      <Configuration>Release_TCS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_TCS|x64">
+      <Configuration>Release_TCS</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8371E060-1F6B-46AE-890C-9CA16AA602A0}</ProjectGuid>
+    <RootNamespace>MorphEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <TargetExt>.lib</TargetExt>
+    <ReferencePath>$(ProjectDir)lib;$(ReferencePath)</ReferencePath>
+    <LibraryPath>$(ProjectDir)lib;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <TargetExt>.lib</TargetExt>
+    <ReferencePath>$(ProjectDir)lib;$(ReferencePath)</ReferencePath>
+    <LibraryPath>$(ProjectDir)lib;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\DIA SDK\include;$(IncludePath)</IncludePath>
+    <TargetExt>.lib</TargetExt>
+    <LibraryPath>$(ProjectDir)lib;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\DIA SDK\lib\amd64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">
+    <IncludePath>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\DIA SDK\include;$(IncludePath)</IncludePath>
+    <TargetExt>.lib</TargetExt>
+    <LibraryPath>$(ProjectDir)lib;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\DIA SDK\lib\amd64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <TargetExt>.lib</TargetExt>
+    <ReferencePath>$(ProjectDir)lib;$(ReferencePath)</ReferencePath>
+    <LibraryPath>$(ProjectDir)lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <TargetExt>.lib</TargetExt>
+    <ReferencePath>$(ProjectDir)lib;$(ReferencePath)</ReferencePath>
+    <LibraryPath>$(ProjectDir)lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\DIA SDK\include;$(IncludePath)</IncludePath>
+    <TargetExt>.lib</TargetExt>
+    <LibraryPath>$(ProjectDir)lib;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\DIA SDK\lib\amd64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">
+    <IncludePath>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\DIA SDK\include;$(IncludePath)</IncludePath>
+    <TargetExt>.lib</TargetExt>
+    <LibraryPath>$(ProjectDir)lib;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\DIA SDK\lib\amd64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>../AssetLibrary/src;$(ProjectDir)src\morphEngine;$(ProjectDir)include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>FBXSDK_SHARED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>XInput.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>freetype28ST.lib;Dbghelp.lib;libfbxsdk.lib;DevIL.lib;iLU.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>../AssetLibrary/src;$(ProjectDir)src\morphEngine;$(ProjectDir)include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_TRACE_CALL_STACK;FBXSDK_SHARED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>XInput.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>freetype28ST.lib;Dbghelp.lib;libfbxsdk.lib;DevIL.lib;iLU.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>../AssetLibrary/src;$(ProjectDir)src\morphEngine;$(ProjectDir)include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>FBXSDK_SHARED;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>XInput.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>freetype28ST.lib;Dbghelp.lib;libfbxsdk.lib;DevIL.lib;iLU.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>../AssetLibrary/src;$(ProjectDir)src\morphEngine;$(ProjectDir)include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_TRACE_CALL_STACK;FBXSDK_SHARED;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>XInput.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>freetype28ST.lib;Dbghelp.lib;libfbxsdk.lib;DevIL.lib;iLU.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>../AssetLibrary/src;$(ProjectDir)src\morphEngine;$(ProjectDir)include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>FBXSDK_SHARED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>XInput.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>freetype28ST.lib;StackWalker_VC8.lib;libfbxsdk.lib;DevIL.lib;iLU.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>../AssetLibrary/src;$(ProjectDir)src\morphEngine;$(ProjectDir)include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_TRACE_CALL_STACK;FBXSDK_SHARED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>XInput.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>freetype28ST.lib;StackWalker_VC8.lib;libfbxsdk.lib;DevIL.lib;iLU.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>../AssetLibrary/src;$(ProjectDir)src\morphEngine;$(ProjectDir)include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>FBXSDK_SHARED;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>XInput.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>freetype28ST.lib;StackWalker_VC8.lib;libfbxsdk.lib;DevIL.lib;iLU.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>../AssetLibrary/src;$(ProjectDir)src\morphEngine;$(ProjectDir)include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_TRACE_CALL_STACK;FBXSDK_SHARED;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>XInput.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>freetype28ST.lib;StackWalker_VC8.lib;libfbxsdk.lib;DevIL.lib;iLU.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\morphEngine\renderer\shaders\ShaderSky.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\Skybox.cpp" />
+    <ClCompile Include="src\morphEngine\physics\Constraints.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\OctTree.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\shaders\ShaderBounds.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\Bounds.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\BoundsBox.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\BoundsFrustum.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\BoundsSphere.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\shaders\ShaderGUIButton.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\meshes\MeshText.cpp" />
+    <ClCompile Include="src\morphEngine\assetLibrary\MFont.cpp" />
+    <ClCompile Include="src\morphEngine\gom\GUITransform.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\GUIEmpty.cpp" />
+    <ClCompile Include="src\morphEngine\gom\ObjectClickEvaluator.cpp" />
+    <ClCompile Include="src\morphEngine\gom\EditorCameraController.cpp" />
+    <ClCompile Include="src\morphEngine\animation\MultiAnimation.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\shaders\ShaderGUI.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\WindowEditor.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\shaders\ShaderGameObjectID.cpp" />
+    <ClCompile Include="src\morphEngine\tests\RendererTestsController.cpp" />
+    <ClCompile Include="src\morphEngine\animation\Animation.cpp" />
+    <ClCompile Include="src\morphEngine\assetLibrary\MAnimationClip.cpp" />
+    <ClCompile Include="src\morphEngine\assetLibrary\MAudio.cpp" />
+    <ClCompile Include="src\morphEngine\assetLibrary\MSkeleton.cpp" />
+    <ClCompile Include="src\morphEngine\audio\AudioListener.cpp" />
+    <ClCompile Include="src\morphEngine\physics\DynamicRigidbody.cpp" />
+    <ClCompile Include="src\morphEngine\physics\PhysicsUtility.cpp" />
+    <ClCompile Include="src\morphEngine\reflection\DummyInit.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\shaders\ShaderBlank.cpp" />
+    <ClCompile Include="src\morphEngine\core\Config.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\shaders\ShaderSepia.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\shaders\ShaderObject.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\shaders\ShaderMerge.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\shaders\ShaderFullscreen.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\shaders\ShaderDeferredLightAmbient.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\shaders\ShaderDeferredLightArea.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\shaders\ShaderDeferredLightDirectional.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\shaders\ShaderDeferredLightPoint.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\shaders\ShaderDeferredLightSpot.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\GBuffer.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\shaders\ShaderLegacy.cpp" />
+    <ClCompile Include="src\morphEngine\assetLibrary\MAsset.cpp" />
+    <ClCompile Include="src\morphEngine\assetLibrary\MMesh.cpp" />
+    <ClCompile Include="src\morphEngine\assetLibrary\MShaderBytecode.cpp" />
+    <ClCompile Include="src\morphEngine\input\EMouseButton.cpp" />
+    <ClCompile Include="src\morphEngine\input\WindowsInputManager.cpp" />
+    <ClCompile Include="src\morphEngine\tests\rendererTests.cpp" />
+    <ClCompile Include="src\morphEngine\utility\MColor.cpp" />
+    <ClCompile Include="src\morphEngine\core\MObject.cpp" />
+    <ClCompile Include="src\morphEngine\gom\ObjectInitializer.cpp" />
+    <ClCompile Include="src\morphEngine\input\EGamepadAxis.cpp" />
+    <ClCompile Include="src\morphEngine\input\EPlayerInputIndex.cpp" />
+    <ClCompile Include="src\morphEngine\input\InputComponent.cpp" />
+    <ClCompile Include="src\morphEngine\memoryManagement\ObjectPoolAllocator.cpp" />
+    <ClCompile Include="src\morphEngine\input\EKeyCode.cpp" />
+    <ClCompile Include="src\morphEngine\reflection\TypeIterator.cpp" />
+    <ClCompile Include="src\morphEngine\core\MessageSystem.cpp" />
+    <ClCompile Include="src\morphEngine\resourceManagement\fileSystem\WindowsFS.cpp" />
+    <ClCompile Include="src\morphEngine\utility\MCollection.cpp" />
+    <ClCompile Include="src\morphEngine\debugging\Console.cpp" />
+    <ClCompile Include="src\morphEngine\debugging\Win32Console.cpp" />
+    <ClCompile Include="src\morphEngine\utility\MEnum.cpp" />
+    <ClCompile Include="src\morphEngine\utility\MFixedArray.cpp" />
+    <ClCompile Include="src\morphEngine\utility\MMatrix.cpp" />
+    <ClCompile Include="src\morphEngine\utility\MQuaternion.cpp" />
+    <ClCompile Include="src\morphEngine\utility\MString.cpp" />
+    <ClCompile Include="src\morphEngine\utility\MVector.cpp" />
+    <ClCompile Include="src\morphEngine\utility\MMath.cpp" />
+    <ClCompile Include="src\morphEngine\core\ITime.cpp" />
+    <ClCompile Include="src\morphEngine\reflection\Property.cpp" />
+    <ClCompile Include="src\morphEngine\memoryManagement\FixedPoolAllocator.cpp" />
+    <ClCompile Include="src\morphEngine\memoryManagement\RandomLinearAllocator.cpp" />
+    <ClCompile Include="src\morphEngine\animation\AnimationFrame.cpp" />
+    <ClCompile Include="src\morphEngine\animation\Bone.cpp" />
+    <ClCompile Include="src\morphEngine\animation\Socket.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\meshes\MeshBox.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\meshes\MeshLine.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\meshes\MeshPlane.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\meshes\MeshSphere.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\meshes\MeshTerrain.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\RendererSkinnedMesh.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\GUIButton.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\GUIText.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\GUIImage.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\GUIImageAnimated.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\GUIBatch.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\RendererDecal.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\RendererTrail.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\RendererBillboard.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\RendererFlare.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\RendererParticle.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\RendererStaticMesh.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\LightArea.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\LightSpot.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\LightPoint.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\LightDirectional.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\LightAmbient.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\Light.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\RenderTarget2D.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\shaders\Shader.cpp" />
+    <ClCompile Include="src\morphEngine\assetLibrary\MMaterial.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\Renderer.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\DebugDrawObject.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\PostEffect.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\device\GraphicsDevice.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\device\GraphicsDeviceDX11.cpp" />
+    <ClCompile Include="src\morphEngine\gom\Camera.cpp" />
+    <ClCompile Include="src\morphEngine\gom\GameObject.cpp" />
+    <ClCompile Include="src\morphEngine\gom\GameObjectComponent.cpp" />
+    <ClCompile Include="src\morphEngine\gom\LuaComponent.cpp" />
+    <ClCompile Include="src\morphEngine\physics\BoxCollider.cpp" />
+    <ClCompile Include="src\morphEngine\physics\CapsuleCollider.cpp" />
+    <ClCompile Include="src\morphEngine\physics\Collider.cpp" />
+    <ClCompile Include="src\morphEngine\physics\FixedJoint.cpp" />
+    <ClCompile Include="src\morphEngine\physics\HingeJoint.cpp" />
+    <ClCompile Include="src\morphEngine\physics\Joint.cpp" />
+    <ClCompile Include="src\morphEngine\physics\MeshCollider.cpp" />
+    <ClCompile Include="src\morphEngine\physics\Ragdoll.cpp" />
+    <ClCompile Include="src\morphEngine\physics\Rigidbody.cpp" />
+    <ClCompile Include="src\morphEngine\physics\SphereCollider.cpp" />
+    <ClCompile Include="src\morphEngine\memoryManagement\Handle.cpp" />
+    <ClCompile Include="src\morphEngine\debugging\DebugRenderMode.cpp" />
+    <ClCompile Include="src\morphEngine\debugging\LuaConsole.cpp" />
+    <ClCompile Include="src\morphEngine\debugging\Profiler.cpp" />
+    <ClCompile Include="src\morphEngine\debugging\ProfilerSample.cpp" />
+    <ClCompile Include="src\morphEngine\ai\navigation\AStar.cpp" />
+    <ClCompile Include="src\morphEngine\ai\navigation\NavigationAgent.cpp" />
+    <ClCompile Include="src\morphEngine\ai\navigation\NavigationMesh.cpp" />
+    <ClCompile Include="src\morphEngine\ai\navigation\NavigationObstacle.cpp" />
+    <ClCompile Include="src\morphEngine\ai\BehaviorTree.cpp" />
+    <ClCompile Include="src\morphEngine\ai\BehaviorTreeManager.cpp" />
+    <ClCompile Include="src\morphEngine\ai\BehaviorTreeNode.cpp" />
+    <ClCompile Include="src\morphEngine\core\Language.cpp" />
+    <ClCompile Include="src\morphEngine\core\LocalizationKit.cpp" />
+    <ClCompile Include="src\morphEngine\core\Settings.cpp" />
+    <ClCompile Include="src\morphEngine\audio\AudioSource.cpp" />
+    <ClCompile Include="src\morphEngine\memoryManagement\RandomFreeListAllocator.cpp" />
+    <ClCompile Include="src\morphEngine\memoryManagement\MemoryManager.cpp" />
+    <ClCompile Include="src\morphEngine\physics\PhysicsManager.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\RenderingManager.cpp" />
+    <ClCompile Include="src\morphEngine\memoryManagement\Allocator.cpp" />
+    <ClCompile Include="src\morphEngine\gom\BaseObject.cpp" />
+    <ClCompile Include="src\morphEngine\gom\Scene.cpp" />
+    <ClCompile Include="src\morphEngine\gom\SceneManager.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\WindowWin32.cpp" />
+    <ClCompile Include="src\morphEngine\resourceManagement\fileSystem\File.cpp" />
+    <ClCompile Include="src\morphEngine\resourceManagement\ResourceManager.cpp" />
+    <ClCompile Include="src\morphEngine\resourceManagement\fileSystem\FileSystem.cpp" />
+    <ClCompile Include="src\morphEngine\debugging\Debug.cpp" />
+    <ClCompile Include="src\morphEngine\audio\AudioManager.cpp" />
+    <ClCompile Include="src\morphEngine\animation\Animator.cpp" />
+    <ClCompile Include="src\morphEngine\ai\AIManager.cpp" />
+    <ClCompile Include="src\morphEngine\core\Engine.cpp" />
+    <ClCompile Include="src\morphEngine\core\Singleton.cpp" />
+    <ClCompile Include="src\morphEngine\tests\delegateTests.cpp" />
+    <ClCompile Include="src\morphEngine\core\Transition.cpp" />
+    <ClCompile Include="src\morphEngine\debugging\Statistics.cpp" />
+    <ClCompile Include="src\morphEngine\reflection\Type.cpp" />
+    <ClCompile Include="src\morphEngine\gom\Transform.cpp" />
+    <ClCompile Include="src\morphEngine\tests\memoryTests.cpp" />
+    <ClCompile Include="src\morphEngine\renderer\Window.cpp" />
+    <ClCompile Include="src\morphEngine\assetLibrary\MTexture.cpp" />
+    <ClCompile Include="src\morphEngine\assetLibrary\MTexture1D.cpp" />
+    <ClCompile Include="src\morphEngine\assetLibrary\MTexture2D.cpp" />
+    <ClCompile Include="src\morphEngine\assetLibrary\MTextureCube.cpp" />
+    <ClCompile Include="src\morphEngine\assetLibrary\MTexture2DAnimated.cpp" />
+    <ClCompile Include="src\morphEngine\animation\Timeline.cpp" />
+    <ClCompile Include="src\morphEngine\core\WindowsTime.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\morphEngine\renderer\shaders\ShaderSky.h" />
+    <ClInclude Include="src\morphEngine\renderer\Skybox.h" />
+    <ClInclude Include="src\morphEngine\renderer\OctTree.h" />
+    <ClInclude Include="src\morphEngine\renderer\shaders\ShaderBounds.h" />
+    <ClInclude Include="src\morphEngine\renderer\Bounds.h" />
+    <ClInclude Include="src\morphEngine\renderer\BoundsBox.h" />
+    <ClInclude Include="src\morphEngine\renderer\BoundsFrustum.h" />
+    <ClInclude Include="src\morphEngine\renderer\BoundsSphere.h" />
+    <ClInclude Include="src\morphEngine\renderer\shaders\ShaderGUIButton.h" />
+    <ClInclude Include="src\morphEngine\renderer\meshes\MeshText.h" />
+    <ClInclude Include="src\morphEngine\assetLibrary\MFont.h" />
+    <ClInclude Include="src\morphEngine\gom\GUITransform.h" />
+    <ClInclude Include="src\morphEngine\renderer\GUIEmpty.h" />
+    <ClInclude Include="src\morphEngine\gom\ObjectClickEvaluator.h" />
+    <ClInclude Include="src\morphEngine\gom\EditorCameraController.h" />
+    <ClInclude Include="src\morphEngine\animation\MultiAnimation.h" />
+    <ClInclude Include="src\morphEngine\renderer\shaders\ShaderGUI.h" />
+    <ClInclude Include="src\morphEngine\renderer\WindowEditor.h" />
+    <ClInclude Include="src\morphEngine\renderer\shaders\ShaderGameObjectID.h" />
+    <ClInclude Include="src\morphEngine\tests\RendererTestsController.h" />
+    <ClInclude Include="src\morphEngine\animation\Animation.h" />
+    <ClInclude Include="src\morphEngine\assetLibrary\FbxHelperDefines.h" />
+    <ClInclude Include="src\morphEngine\assetLibrary\MAnimationClip.h" />
+    <ClInclude Include="src\morphEngine\assetLibrary\MAudio.h" />
+    <ClInclude Include="src\morphEngine\assetLibrary\MSkeleton.h" />
+    <ClInclude Include="src\morphEngine\audio\AudioListener.h" />
+    <ClInclude Include="src\morphEngine\physics\Constraints.h" />
+    <ClInclude Include="src\morphEngine\physics\DynamicRigidbody.h" />
+    <ClInclude Include="src\morphEngine\physics\PhysicsUtility.h" />
+    <ClInclude Include="src\morphEngine\reflection\DummyInit.h" />
+    <ClInclude Include="src\morphEngine\renderer\shaders\ShaderBlank.h" />
+    <ClInclude Include="src\morphEngine\core\Config.h" />
+    <ClInclude Include="src\morphEngine\memoryManagement\HandleInfo.h" />
+    <ClInclude Include="src\morphEngine\renderer\shaders\ShaderSepia.h" />
+    <ClInclude Include="src\morphEngine\renderer\shaders\ShaderObject.h" />
+    <ClInclude Include="src\morphEngine\renderer\shaders\ShaderMerge.h" />
+    <ClInclude Include="src\morphEngine\renderer\shaders\ShaderFullscreen.h" />
+    <ClInclude Include="src\morphEngine\renderer\shaders\ShaderDeferredLightAmbient.h" />
+    <ClInclude Include="src\morphEngine\renderer\shaders\ShaderDeferredLightArea.h" />
+    <ClInclude Include="src\morphEngine\renderer\shaders\ShaderDeferredLightDirectional.h" />
+    <ClInclude Include="src\morphEngine\renderer\shaders\ShaderDeferredLightPoint.h" />
+    <ClInclude Include="src\morphEngine\renderer\shaders\ShaderDeferredLightSpot.h" />
+    <ClInclude Include="src\morphEngine\renderer\GBuffer.h" />
+    <ClInclude Include="src\morphEngine\renderer\shaders\ShaderLegacy.h" />
+    <ClInclude Include="src\morphEngine\assetLibrary\MAsset.h" />
+    <ClInclude Include="src\morphEngine\assetLibrary\MMesh.h" />
+    <ClInclude Include="src\morphEngine\assetLibrary\MShaderBytecode.h" />
+    <ClInclude Include="src\morphEngine\input\EMouseButton.h" />
+    <ClInclude Include="src\morphEngine\tests\rendererTests.h" />
+    <ClInclude Include="src\morphEngine\utility\Collections.h" />
+    <ClInclude Include="src\morphEngine\utility\MColor.h" />
+    <ClInclude Include="src\morphEngine\core\MObject.h" />
+    <ClInclude Include="src\morphEngine\gom\ObjectInitializer.h" />
+    <ClInclude Include="src\morphEngine\input\EPlayerInputIndex.h" />
+    <ClInclude Include="src\morphEngine\input\InputComponent.h" />
+    <ClInclude Include="src\morphEngine\input\WindowsInputManager.h" />
+    <ClInclude Include="src\morphEngine\memoryManagement\ObjectPoolAllocator.h" />
+    <ClInclude Include="src\morphEngine\reflection\TypeIterator.h" />
+    <ClInclude Include="src\morphEngine\utility\MEnum.h" />
+    <ClInclude Include="src\morphEngine\utility\MLinkedList.h" />
+    <ClInclude Include="src\morphEngine\core\MessageSystem.h" />
+    <ClInclude Include="src\morphEngine\utility\MDictionary.h" />
+    <ClInclude Include="src\morphEngine\resourceManagement\fileSystem\WindowsFS.h" />
+    <ClInclude Include="src\morphEngine\utility\MPriorityQueueAsc.h" />
+    <ClInclude Include="src\morphEngine\utility\MBinaryTree.h" />
+    <ClInclude Include="src\morphEngine\utility\MPriorityQueue.h" />
+    <ClInclude Include="src\morphEngine\utility\MQueue.h" />
+    <ClInclude Include="src\morphEngine\utility\MStack.h" />
+    <ClInclude Include="src\morphEngine\utility\MCollection.h" />
+    <ClInclude Include="src\morphEngine\debugging\Console.h" />
+    <ClInclude Include="src\morphEngine\debugging\Win32Console.h" />
+    <ClInclude Include="src\morphEngine\utility\MMatrix.h" />
+    <ClInclude Include="src\morphEngine\utility\MQuaternion.h" />
+    <ClInclude Include="src\morphEngine\utility\MString.h" />
+    <ClInclude Include="src\morphEngine\utility\MVector.h" />
+    <ClInclude Include="src\morphEngine\utility\MMath.h" />
+    <ClInclude Include="src\morphEngine\core\ITime.h" />
+    <ClInclude Include="src\morphEngine\reflection\Property.h" />
+    <ClInclude Include="src\morphEngine\utility\MFixedArray.h" />
+    <ClInclude Include="src\morphEngine\memoryManagement\FixedPoolAllocator.h" />
+    <ClInclude Include="src\morphEngine\memoryManagement\RandomLinearAllocator.h" />
+    <ClInclude Include="src\morphEngine\memoryManagement\AllocatorCollection.h" />
+    <ClInclude Include="src\morphEngine\utility\MArray.h" />
+    <ClInclude Include="src\morphEngine\animation\AnimationFrame.h" />
+    <ClInclude Include="src\morphEngine\animation\Bone.h" />
+    <ClInclude Include="src\morphEngine\animation\Socket.h" />
+    <ClInclude Include="src\morphEngine\renderer\meshes\MeshBox.h" />
+    <ClInclude Include="src\morphEngine\renderer\meshes\MeshLine.h" />
+    <ClInclude Include="src\morphEngine\renderer\meshes\MeshPlane.h" />
+    <ClInclude Include="src\morphEngine\renderer\meshes\MeshSphere.h" />
+    <ClInclude Include="src\morphEngine\renderer\meshes\MeshTerrain.h" />
+    <ClInclude Include="src\morphEngine\renderer\RendererSkinnedMesh.h" />
+    <ClInclude Include="src\morphEngine\renderer\GUIButton.h" />
+    <ClInclude Include="src\morphEngine\renderer\GUIText.h" />
+    <ClInclude Include="src\morphEngine\renderer\GUIImage.h" />
+    <ClInclude Include="src\morphEngine\renderer\GUIImageAnimated.h" />
+    <ClInclude Include="src\morphEngine\renderer\GUIBatch.h" />
+    <ClInclude Include="src\morphEngine\renderer\RendererDecal.h" />
+    <ClInclude Include="src\morphEngine\renderer\RendererTrail.h" />
+    <ClInclude Include="src\morphEngine\renderer\RendererBillboard.h" />
+    <ClInclude Include="src\morphEngine\renderer\RendererFlare.h" />
+    <ClInclude Include="src\morphEngine\renderer\RendererParticle.h" />
+    <ClInclude Include="src\morphEngine\renderer\RendererStaticMesh.h" />
+    <ClInclude Include="src\morphEngine\renderer\LightArea.h" />
+    <ClInclude Include="src\morphEngine\renderer\LightSpot.h" />
+    <ClInclude Include="src\morphEngine\renderer\LightPoint.h" />
+    <ClInclude Include="src\morphEngine\renderer\LightDirectional.h" />
+    <ClInclude Include="src\morphEngine\renderer\LightAmbient.h" />
+    <ClInclude Include="src\morphEngine\renderer\Light.h" />
+    <ClInclude Include="src\morphEngine\renderer\RenderTarget2D.h" />
+    <ClInclude Include="src\morphEngine\renderer\shaders\Shader.h" />
+    <ClInclude Include="src\morphEngine\assetLibrary\MMaterial.h" />
+    <ClInclude Include="src\morphEngine\renderer\Renderer.h" />
+    <ClInclude Include="src\morphEngine\renderer\DebugDrawObject.h" />
+    <ClInclude Include="src\morphEngine\renderer\PostEffect.h" />
+    <ClInclude Include="src\morphEngine\renderer\device\GraphicsDevice.h" />
+    <ClInclude Include="src\morphEngine\renderer\device\GraphicsDeviceDX11.h" />
+    <ClInclude Include="src\morphEngine\gom\Camera.h" />
+    <ClInclude Include="src\morphEngine\gom\GameObject.h" />
+    <ClInclude Include="src\morphEngine\gom\GameObjectComponent.h" />
+    <ClInclude Include="src\morphEngine\gom\LuaComponent.h" />
+    <ClInclude Include="src\morphEngine\physics\BoxCollider.h" />
+    <ClInclude Include="src\morphEngine\physics\CapsuleCollider.h" />
+    <ClInclude Include="src\morphEngine\physics\Collider.h" />
+    <ClInclude Include="src\morphEngine\physics\FixedJoint.h" />
+    <ClInclude Include="src\morphEngine\physics\HingeJoint.h" />
+    <ClInclude Include="src\morphEngine\physics\Joint.h" />
+    <ClInclude Include="src\morphEngine\physics\MeshCollider.h" />
+    <ClInclude Include="src\morphEngine\physics\Ragdoll.h" />
+    <ClInclude Include="src\morphEngine\physics\Rigidbody.h" />
+    <ClInclude Include="src\morphEngine\physics\SphereCollider.h" />
+    <ClInclude Include="src\morphEngine\memoryManagement\Handle.h" />
+    <ClInclude Include="src\morphEngine\debugging\DebugRenderMode.h" />
+    <ClInclude Include="src\morphEngine\debugging\LuaConsole.h" />
+    <ClInclude Include="src\morphEngine\debugging\Profiler.h" />
+    <ClInclude Include="src\morphEngine\debugging\ProfilerSample.h" />
+    <ClInclude Include="src\morphEngine\ai\navigation\AStar.h" />
+    <ClInclude Include="src\morphEngine\ai\navigation\NavigationAgent.h" />
+    <ClInclude Include="src\morphEngine\ai\navigation\NavigationMesh.h" />
+    <ClInclude Include="src\morphEngine\ai\navigation\NavigationObstacle.h" />
+    <ClInclude Include="src\morphEngine\ai\BehaviorTree.h" />
+    <ClInclude Include="src\morphEngine\ai\BehaviorTreeManager.h" />
+    <ClInclude Include="src\morphEngine\ai\BehaviorTreeNode.h" />
+    <ClInclude Include="src\morphEngine\core\Language.h" />
+    <ClInclude Include="src\morphEngine\core\LocalizationKit.h" />
+    <ClInclude Include="src\morphEngine\core\Settings.h" />
+    <ClInclude Include="src\morphEngine\audio\AudioSource.h" />
+    <ClInclude Include="src\morphEngine\input\EGamepadAxis.h" />
+    <ClInclude Include="src\morphEngine\input\EKeyCode.h" />
+    <ClInclude Include="src\morphEngine\memoryManagement\RandomFreeListAllocator.h" />
+    <ClInclude Include="src\morphEngine\memoryManagement\MemoryManager.h" />
+    <ClInclude Include="src\morphEngine\core\Delegate.h" />
+    <ClInclude Include="src\morphEngine\core\GlobalDefines.h" />
+    <ClInclude Include="src\morphEngine\debugging\GlobalDefines.h" />
+    <ClInclude Include="src\morphEngine\physics\PhysicsManager.h" />
+    <ClInclude Include="src\morphEngine\renderer\RenderingManager.h" />
+    <ClInclude Include="src\morphEngine\memoryManagement\Allocator.h" />
+    <ClInclude Include="src\morphEngine\gom\BaseObject.h" />
+    <ClInclude Include="src\morphEngine\gom\Scene.h" />
+    <ClInclude Include="src\morphEngine\gom\SceneManager.h" />
+    <ClInclude Include="src\morphEngine\renderer\WindowWin32.h" />
+    <ClInclude Include="src\morphEngine\resourceManagement\fileSystem\File.h" />
+    <ClInclude Include="src\morphEngine\resourceManagement\ResourceManager.h" />
+    <ClInclude Include="src\morphEngine\resourceManagement\fileSystem\FileSystem.h" />
+    <ClInclude Include="src\morphEngine\debugging\Debug.h" />
+    <ClInclude Include="src\morphEngine\audio\AudioManager.h" />
+    <ClInclude Include="src\morphEngine\animation\Animator.h" />
+    <ClInclude Include="src\morphEngine\ai\AIManager.h" />
+    <ClInclude Include="src\morphEngine\core\Engine.h" />
+    <ClInclude Include="src\morphEngine\core\Singleton.h" />
+    <ClInclude Include="src\morphEngine\tests\delegateTests.h" />
+    <ClInclude Include="src\morphEngine\core\StateMachine.h" />
+    <ClInclude Include="src\morphEngine\core\Transition.h" />
+    <ClInclude Include="src\morphEngine\debugging\Statistics.h" />
+    <ClInclude Include="src\morphEngine\reflection\Type.h" />
+    <ClInclude Include="src\morphEngine\gom\Transform.h" />
+    <ClInclude Include="src\morphEngine\tests\memoryTests.h" />
+    <ClInclude Include="src\morphEngine\renderer\Window.h" />
+    <ClInclude Include="src\morphEngine\assetLibrary\MTexture.h" />
+    <ClInclude Include="src\morphEngine\assetLibrary\MTexture1D.h" />
+    <ClInclude Include="src\morphEngine\assetLibrary\MTexture2D.h" />
+    <ClInclude Include="src\morphEngine\assetLibrary\MTextureCube.h" />
+    <ClInclude Include="src\morphEngine\assetLibrary\MTexture2DAnimated.h" />
+    <ClInclude Include="src\morphEngine\animation\Timeline.h" />
+    <ClInclude Include="src\morphEngine\core\WindowsTime.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="src\morphEngine\renderer\shaders\source\DX11\DeferredFullscreen_VS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/Resources/Shaders/DeferredFullscreen/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">$(OutDir)/Resources/Shaders/DeferredFullscreen/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/Resources/Shaders/DeferredFullscreen/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">$(OutDir)/Resources/Shaders/DeferredFullscreen/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/Resources/Shaders/DeferredFullscreen/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">$(OutDir)/Resources/Shaders/DeferredFullscreen/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resources/Shaders/DeferredFullscreen/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">$(OutDir)/Resources/Shaders/DeferredFullscreen/DX11/%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="src\morphEngine\renderer\shaders\source\DX11\DeferredLightAmbient_PS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/Resources/Shaders/DeferredLightAmbient/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">$(OutDir)/Resources/Shaders/DeferredLightAmbient/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/Resources/Shaders/DeferredLightAmbient/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">$(OutDir)/Resources/Shaders/DeferredLightAmbient/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/Resources/Shaders/DeferredLightAmbient/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">$(OutDir)/Resources/Shaders/DeferredLightAmbient/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resources/Shaders/DeferredLightAmbient/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">$(OutDir)/Resources/Shaders/DeferredLightAmbient/DX11/%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="src\morphEngine\renderer\shaders\source\DX11\DeferredLightArea_PS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/Resources/Shaders/DeferredLightArea/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">$(OutDir)/Resources/Shaders/DeferredLightArea/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/Resources/Shaders/DeferredLightArea/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">$(OutDir)/Resources/Shaders/DeferredLightArea/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/Resources/Shaders/DeferredLightArea/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">$(OutDir)/Resources/Shaders/DeferredLightArea/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resources/Shaders/DeferredLightArea/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">$(OutDir)/Resources/Shaders/DeferredLightArea/DX11/%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="src\morphEngine\renderer\shaders\source\DX11\DeferredLightDirectional_PS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/Resources/Shaders/DeferredLightDirectional/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">$(OutDir)/Resources/Shaders/DeferredLightDirectional/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/Resources/Shaders/DeferredLightDirectional/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">$(OutDir)/Resources/Shaders/DeferredLightDirectional/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/Resources/Shaders/DeferredLightDirectional/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">$(OutDir)/Resources/Shaders/DeferredLightDirectional/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resources/Shaders/DeferredLightDirectional/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">$(OutDir)/Resources/Shaders/DeferredLightDirectional/DX11/%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="src\morphEngine\renderer\shaders\source\DX11\DeferredLightPoint_PS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/Resources/Shaders/DeferredLightPoint/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">$(OutDir)/Resources/Shaders/DeferredLightPoint/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/Resources/Shaders/DeferredLightPoint/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">$(OutDir)/Resources/Shaders/DeferredLightPoint/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/Resources/Shaders/DeferredLightPoint/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">$(OutDir)/Resources/Shaders/DeferredLightPoint/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resources/Shaders/DeferredLightPoint/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">$(OutDir)/Resources/Shaders/DeferredLightPoint/DX11/%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="src\morphEngine\renderer\shaders\source\DX11\DeferredLightSpot_PS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/Resources/Shaders/DeferredLightSpot/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">$(OutDir)/Resources/Shaders/DeferredLightSpot/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/Resources/Shaders/DeferredLightSpot/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">$(OutDir)/Resources/Shaders/DeferredLightSpot/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/Resources/Shaders/DeferredLightSpot/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">$(OutDir)/Resources/Shaders/DeferredLightSpot/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resources/Shaders/DeferredLightSpot/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">$(OutDir)/Resources/Shaders/DeferredLightSpot/DX11/%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="src\morphEngine\renderer\shaders\source\DX11\Merge_PS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/Resources/Shaders/Merge/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">$(OutDir)/Resources/Shaders/Merge/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/Resources/Shaders/Merge/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">$(OutDir)/Resources/Shaders/Merge/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/Resources/Shaders/Merge/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">$(OutDir)/Resources/Shaders/Merge/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resources/Shaders/Merge/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">$(OutDir)/Resources/Shaders/Merge/DX11/%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="src\morphEngine\renderer\shaders\source\DX11\Sepia_PS.hlsl">
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/Resources/Shaders/Sepia/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">$(OutDir)/Resources/Shaders/Sepia/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/Resources/Shaders/Sepia/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">$(OutDir)/Resources/Shaders/Sepia/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/Resources/Shaders/Sepia/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">$(OutDir)/Resources/Shaders/Sepia/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resources/Shaders/Sepia/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">$(OutDir)/Resources/Shaders/Sepia/DX11/%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="src\morphEngine\renderer\shaders\source\DX11\ShaderBlank_PS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/Resources/Shaders/ShaderBlank/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderBlank/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/Resources/Shaders/ShaderBlank/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderBlank/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/Resources/Shaders/ShaderBlank/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderBlank/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resources/Shaders/ShaderBlank/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderBlank/DX11/%(Filename).cso</ObjectFileOutput>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="src\morphEngine\renderer\shaders\source\DX11\ShaderBounds_GS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="src\morphEngine\renderer\shaders\source\DX11\ShaderLegacy_D_PS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/Resources/Shaders/ShaderLegacy/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderLegacy/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/Resources/Shaders/ShaderLegacy/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderLegacy/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/Resources/Shaders/ShaderLegacy/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderLegacy/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resources/Shaders/ShaderLegacy/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderLegacy/DX11/%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="src\morphEngine\renderer\shaders\source\DX11\ShaderLegacy_PS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/Resources/Shaders/ShaderLegacy/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderLegacy/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/Resources/Shaders/ShaderLegacy/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderLegacy/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/Resources/Shaders/ShaderLegacy/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderLegacy/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resources/Shaders/ShaderLegacy/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderLegacy/DX11/%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="src\morphEngine\renderer\shaders\source\DX11\ObjectVertexShader_VS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">Vertex</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/Resources/Shaders/ObjectVertexShader/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">$(OutDir)/Resources/Shaders/ObjectVertexShader/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/Resources/Shaders/ObjectVertexShader/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">$(OutDir)/Resources/Shaders/ObjectVertexShader/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/Resources/Shaders/ObjectVertexShader/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">$(OutDir)/Resources/Shaders/ObjectVertexShader/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resources/Shaders/ObjectVertexShader/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">$(OutDir)/Resources/Shaders/ObjectVertexShader/DX11/%(Filename).cso</ObjectFileOutput>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="src\morphEngine\renderer\shaders\source\DX11\ObjectVertexShader_Skin_VS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/Resources/Shaders/ObjectVertexShader_Skin/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">$(OutDir)/Resources/Shaders/ObjectVertexShader_Skin/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/Resources/Shaders/ObjectVertexShader_Skin/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">$(OutDir)/Resources/Shaders/ObjectVertexShader_Skin/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/Resources/Shaders/ObjectVertexShader_Skin/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">$(OutDir)/Resources/Shaders/ObjectVertexShader_Skin/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resources/Shaders/ObjectVertexShader_Skin/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">$(OutDir)/Resources/Shaders/ObjectVertexShader_Skin/DX11/%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="src\morphEngine\renderer\shaders\source\DX11\ShaderGameObjectID_PS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/Resources/Shaders/ShaderGameObjectID/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderGameObjectID/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/Resources/Shaders/ShaderGameObjectID/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderGameObjectID/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/Resources/Shaders/ShaderGameObjectID/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderGameObjectID/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resources/Shaders/ShaderGameObjectID/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderGameObjectID/DX11/%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="src\morphEngine\renderer\shaders\source\DX11\ShaderGUI_VS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/Resources/Shaders/ShaderGUI/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderGUI/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/Resources/Shaders/ShaderGUI/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderGUI/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/Resources/Shaders/ShaderGUI/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderGUI/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resources/Shaders/ShaderGUI/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderGUI/DX11/%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="src\morphEngine\renderer\shaders\source\DX11\ShaderGUI_PS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/Resources/Shaders/ShaderGUI/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderGUI/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/Resources/Shaders/ShaderGUI/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderGUI/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/Resources/Shaders/ShaderGUI/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderGUI/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resources/Shaders/ShaderGUI/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderGUI/DX11/%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="src\morphEngine\renderer\shaders\source\DX11\ShaderBounds_VS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="src\morphEngine\renderer\shaders\source\DX11\ShaderBounds_PS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderBounds/DX11/%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="src\morphEngine\renderer\shaders\source\DX11\ShaderSky_VS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/Resources/Shaders/ShaderSky/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderSky/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/Resources/Shaders/ShaderSky/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderSky/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/Resources/Shaders/ShaderSky/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderSky/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resources/Shaders/ShaderSky/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderSky/DX11/%(Filename).cso</ObjectFileOutput>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="src\morphEngine\renderer\shaders\source\DX11\ShaderSky_PS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/Resources/Shaders/ShaderSky/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderSky/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/Resources/Shaders/ShaderSky/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">$(OutDir)/Resources/Shaders/ShaderSky/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/Resources/Shaders/ShaderSky/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderSky/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resources/Shaders/ShaderSky/DX11/%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">$(OutDir)/Resources/Shaders/ShaderSky/DX11/%(Filename).cso</ObjectFileOutput>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release_TCS|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug_TCS|x64'">5.0</ShaderModel>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\morphEngine\renderer\shaders\source\DX11\Deferred.hlsli" />
+    <None Include="src\morphEngine\renderer\shaders\source\DX11\Lighting.hlsli" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\DevIL.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

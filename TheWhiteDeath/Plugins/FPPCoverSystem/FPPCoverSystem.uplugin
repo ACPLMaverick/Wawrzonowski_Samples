@@ -1,0 +1,25 @@
+{
+	"FileVersion" : 3,
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"FriendlyName" : "FPP Cover System",
+	"Description" : "Simple and automated cover system for FFP games.",
+	"Category" : "Gameplay.Cover",
+	"CreatedBy" : "Janusze Programowania",
+	"CreatedByURL" : "http://www.januszeprogramowania.pl",
+	"DocsURL" : "",
+	"MarketplaceURL" : "",
+	"SupportURL" : "",
+	"EnabledByDefault" : true,
+	"CanContainContent" : false,
+	"IsBetaVersion" : false,
+	"Installed" : false,
+	"Modules" :
+	[
+		{
+			"Name" : "FPPCoverSystem",
+			"Type" : "Runtime",
+			"LoadingPhase" : "Default"
+		}
+	]
+}
