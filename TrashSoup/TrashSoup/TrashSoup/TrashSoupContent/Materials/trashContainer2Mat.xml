@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Material>
+  <Name>trashContainer2Mat</Name>
+  <EffectPath>Effects\CubeNormalEffect</EffectPath>
+  <DiffusePath>Textures\Enviro\Minor\TrashContainer2_D</DiffusePath>
+  <NormalPath>Textures\Enviro\Minor\TrashContainer2_N</NormalPath>
+  <CubePath>Textures\Skyboxes\Daylight</CubePath>
+  <DiffuseColor>
+    <X>1</X>
+    <Y>1</Y>
+    <Z>1</Z>
+  </DiffuseColor>
+  <SpecularColor>
+    <X>0.8</X>
+    <Y>0.8</Y>
+    <Z>0.8</Z>
+  </SpecularColor>
+  <Glossiness>150</Glossiness>
+  <ReflectivityColor>
+    <X>1</X>
+    <Y>1</Y>
+    <Z>1</Z>
+  </ReflectivityColor>
+  <ReflectivityBias>0.25</ReflectivityBias>
+  <Transparency>1</Transparency>
+  <PerPixelLighting>false</PerPixelLighting>
+  <ReceiveShadows>true</ReceiveShadows>
+  <Unlit>false</Unlit>
+</Material>

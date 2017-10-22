@@ -1,0 +1,19 @@
+#pragma once
+#include "Scene.h"
+
+class SceneTriangle :
+	public Scene
+{
+protected:
+
+#pragma region Functions Protected
+
+	virtual void InitializeScene() override;
+
+#pragma endregion
+
+public:
+	SceneTriangle();
+	~SceneTriangle();
+};
+

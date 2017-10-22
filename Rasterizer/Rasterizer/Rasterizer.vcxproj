@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\SceneCornel.cpp" />
+    <ClCompile Include="src\Input.cpp" />
+    <ClCompile Include="src\light\LightPoint.cpp" />
+    <ClCompile Include="src\rendererFGK\MeshFGK.cpp" />
+    <ClCompile Include="src\SceneSphere.cpp" />
+    <ClCompile Include="src\rendererFGK\RendererFGK.cpp" />
+    <ClCompile Include="src\Material.cpp" />
+    <ClCompile Include="src\light\LightAmbient.cpp" />
+    <ClCompile Include="src\light\LightDirectional.cpp" />
+    <ClCompile Include="src\light\LightSpot.cpp" />
+    <ClCompile Include="src\rendererMav\MeshMav.cpp" />
+    <ClCompile Include="src\Float2.cpp" />
+    <ClCompile Include="src\Mesh.cpp" />
+    <ClCompile Include="src\Float4.cpp" />
+    <ClCompile Include="src\Matrix4x4.cpp" />
+    <ClCompile Include="src\Int2.cpp" />
+    <ClCompile Include="src\rendererMav\GraphicsDevice.cpp" />
+    <ClCompile Include="src\Plane.cpp" />
+    <ClCompile Include="src\Ray.cpp" />
+    <ClCompile Include="src\SceneMeshes.cpp" />
+    <ClCompile Include="src\SpecificObjectFactory.cpp" />
+    <ClCompile Include="src\rendererMav\RendererMav.cpp" />
+    <ClCompile Include="src\IRenderer.cpp" />
+    <ClCompile Include="src\Color32.cpp" />
+    <ClCompile Include="src\Buffer.cpp" />
+    <ClCompile Include="src\Float3.cpp" />
+    <ClCompile Include="src\rendererMav\TriangleMav.cpp" />
+    <ClCompile Include="src\SceneTriangle.cpp" />
+    <ClCompile Include="src\Camera.cpp" />
+    <ClCompile Include="src\Primitive.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Scene.cpp" />
+    <ClCompile Include="src\Singleton.cpp" />
+    <ClCompile Include="src\Sphere.cpp" />
+    <ClCompile Include="src\System.cpp" />
+    <ClCompile Include="src\SystemSettings.cpp" />
+    <ClCompile Include="src\Timer.cpp" />
+    <ClCompile Include="src\Triangle.cpp" />
+    <ClCompile Include="src\Transform.cpp" />
+    <ClCompile Include="src\UShort3.cpp" />
+    <ClCompile Include="src\Texture.cpp" />
+    <ClCompile Include="src\rendererFGK\TriangleFGK.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Optimizations.h" />
+    <ClInclude Include="src\SceneCornel.h" />
+    <ClInclude Include="src\Input.h" />
+    <ClInclude Include="src\light\LightPoint.h" />
+    <ClInclude Include="src\rendererFGK\MeshFGK.h" />
+    <ClInclude Include="src\SceneSphere.h" />
+    <ClInclude Include="src\rendererFGK\RendererFGK.h" />
+    <ClInclude Include="src\Material.h" />
+    <ClInclude Include="src\light\LightAmbient.h" />
+    <ClInclude Include="src\light\LightDirectional.h" />
+    <ClInclude Include="src\light\LightSpot.h" />
+    <ClInclude Include="src\rendererMav\MeshMav.h" />
+    <ClInclude Include="src\Float2.h" />
+    <ClInclude Include="src\Mesh.h" />
+    <ClInclude Include="src\Float4.h" />
+    <ClInclude Include="src\Matrix4x4.h" />
+    <ClInclude Include="src\Int2.h" />
+    <ClInclude Include="src\rendererMav\GraphicsDevice.h" />
+    <ClInclude Include="src\Plane.h" />
+    <ClInclude Include="src\Ray.h" />
+    <ClInclude Include="src\SceneMeshes.h" />
+    <ClInclude Include="src\SpecificObjectFactory.h" />
+    <ClInclude Include="src\rendererMav\RendererMav.h" />
+    <ClInclude Include="src\IRenderer.h" />
+    <ClInclude Include="src\Math.h" />
+    <ClInclude Include="src\Color32.h" />
+    <ClInclude Include="src\Buffer.h" />
+    <ClInclude Include="src\Float3.h" />
+    <ClInclude Include="src\rendererMav\TriangleMav.h" />
+    <ClInclude Include="src\SceneTriangle.h" />
+    <ClInclude Include="src\Camera.h" />
+    <ClInclude Include="src\Primitive.h" />
+    <ClInclude Include="src\Scene.h" />
+    <ClInclude Include="src\Singleton.h" />
+    <ClInclude Include="src\Sphere.h" />
+    <ClInclude Include="src\stdafx.h" />
+    <ClInclude Include="src\System.h" />
+    <ClInclude Include="src\SystemSettings.h" />
+    <ClInclude Include="src\Timer.h" />
+    <ClInclude Include="src\Triangle.h" />
+    <ClInclude Include="src\Transform.h" />
+    <ClInclude Include="src\UShort3.h" />
+    <ClInclude Include="src\Texture.h" />
+    <ClInclude Include="src\rendererFGK\TriangleFGK.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B2B6FFA4-446C-4866-814B-DFD8FBDE95DC}</ProjectGuid>
+    <RootNamespace>FGK_Raytracer</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>Rasterizer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)src</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Comctl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Comctl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Comctl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Comctl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
