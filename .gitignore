@@ -30,3 +30,5 @@
 *.exe
 *.out
 *.app
+FluidSim/.vs/
+Rasterizer/.vs/

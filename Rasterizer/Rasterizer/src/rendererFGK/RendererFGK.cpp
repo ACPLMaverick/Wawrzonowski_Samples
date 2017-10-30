@@ -89,7 +89,7 @@ namespace rendererFGK
 			(
 				NULL,
 				0,
-				ThreadFunc, // tu bêdzie wskaŸnik
+				ThreadFunc,
 				(LPVOID)i,
 				NULL,
 				NULL

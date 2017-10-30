@@ -93,7 +93,7 @@ void Advect (uint3 id : SV_DispatchThreadID)
 	uint c = FCOORD(id.x, id.y, Width);
 
 	float2 cPos = id.xy;
-	float2 cVel = float2(VelocityField[c].x, VelocityField[c].y);	// ?!?
+	float2 cVel = float2(VelocityField[c].x, VelocityField[c].y);
 	float2 backPos = cPos - DeltaTime * cVel;
 
 	float4 st;

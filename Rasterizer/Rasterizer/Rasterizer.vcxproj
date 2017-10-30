@@ -111,7 +111,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{B2B6FFA4-446C-4866-814B-DFD8FBDE95DC}</ProjectGuid>
     <RootNamespace>FGK_Raytracer</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
     <ProjectName>Rasterizer</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

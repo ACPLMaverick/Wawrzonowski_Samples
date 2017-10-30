@@ -17,6 +17,7 @@ public:
 #pragma region Functions Public
 
 	Buffer<T>(uint16_t width, uint16_t height);
+	Buffer<T>(const Buffer<T>& copy);
 	~Buffer<T>();
 
 	void SetPixel(uint16_t x, uint16_t y, T val);
@@ -24,6 +25,7 @@ public:
 	T GetPixelScaled(uint16_t x, uint16_t y, uint16_t w, uint16_t h);
 
 	void Fill(T val);
+	Buffer<T>& operator=(const Buffer<T>& copy);
 
 	uint16_t GetWidth() { return _width; }
 	uint16_t GetHeight() { return _height; }
@@ -40,6 +42,12 @@ template <class T> Buffer<T>::Buffer(uint16_t width, uint16_t height) :
 {
 	_data = new T[width * height];
 	ZeroMemory(_data, width * height * sizeof(T));
+}
+
+template<class T>
+inline Buffer<T>::Buffer(const Buffer<T>& copy)
+{
+	// not copyable
 }
 
 template <class T> Buffer<T>::~Buffer()
@@ -81,4 +89,11 @@ inline void Buffer<T>::Fill(T val)
 	{
 		_data[i] = val;
 	}
+}
+
+template<class T>
+inline Buffer<T>& Buffer<T>::operator=(const Buffer<T>& copy)
+{
+	// not copyable
+	return *this;
 }

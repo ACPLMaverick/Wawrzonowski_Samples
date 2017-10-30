@@ -77,8 +77,6 @@ void ACoverCharacter::BeginCover(float dt)
 
 		_coverBeginPitchYawTarget = FVector2D(GetControlRotation().Pitch - dir.Z * (arbitraryAngleUp + angleUp), GetControlRotation().Yaw + dir.Y * (arbitraryAngleSide + angleSide));
 		_bCoverBeginRotationLerp = true;
-		//AddControllerPitchInput(dir.Z * (arbitraryAngleUp + angleUp));
-		//AddControllerYawInput(dir.Y * (arbitraryAngleSide + angleSide));
 
 		if (SoundTakeCover != NULL)
 		{
@@ -113,8 +111,6 @@ void ACoverCharacter::TickCover(float dt)
 						FMath::FInterpTo(GetControlRotation().Pitch, _coverBeginPitchYawTarget.X, dt, speed),
 						FMath::FInterpTo(GetControlRotation().Yaw, _coverBeginPitchYawTarget.Y, dt, speed),
 						GetControlRotation().Roll));
-					/*AddControllerPitchInput(FMath::FInterpTo(GetControlRotation().Pitch, _coverBeginPitchYawTarget.X, dt, speed));
-					AddControllerYawInput(FMath::FInterpTo(GetControlRotation().Pitch, _coverBeginPitchYawTarget.Y, dt, speed));*/
 				}
 			}
 			else if ((_currentCover->GetIfNeedToCrouch() && movement->IsCrouching()) ||
@@ -144,12 +140,6 @@ void ACoverCharacter::TickCover(float dt)
 				{
 					emerge.Z = FMath::Min(emerge.Z, 0.0f);
 				}
-
-				// do not disemerge on Z if camera points upwards - this is disabled for now
-				//if (FirstPersonCameraComponent->GetForwardVector().Z > 0.0f&& GetCapsuleComponent()->GetUnscaledCapsuleHalfHeight() > movement->CrouchedHalfHeight)
-				//{
-				//	emerge.Z = FMath::Max(emerge.Z, 0.0f);
-				//}
 
 				// do not emerge on X if we reach the border angle
 				float clampYaw = _currentCover->GetCoverForward(GetActorLocation()).Rotation().Yaw;
@@ -192,24 +182,6 @@ void ACoverCharacter::TickCover(float dt)
 				AddMovementInput(_currentCover->GetCoverRight(GetActorLocation()), emerge.Y);
 
 				UE_LOG(LogTemp, Log, TEXT("CoverTick: %f %f"), emerge.Y, emerge.Z);
-
-				// check player location so he won't fall out of the cover boundaries - that won't work for now.
-				/*
-				FVector currentLoc = GetActorLocation() + _currentCover->GetCoverRight(GetActorLocation()) * emerge.Y;
-				FVector finalLeft = _currentCover->GetBoundLeftWorld();
-				FVector finalRight = _currentCover->GetBoundRightRearWorld();
-				const float dist = 1.0f;
-
-				if ((emerge.Y > 0.0f && FVector::DistSquared(currentLoc, finalLeft) < dist) || (emerge.Y <= 0.0f && FVector::DistSquared(currentLoc, finalRight) < dist))
-				{
-				// move player into given direction by emerge vector
-				AddMovementInput(_currentCover->GetCoverRight(GetActorLocation()), emerge.Y);
-				}
-				else
-				{
-				UE_LOG(LogTemp, Log, TEXT("Poza!"));
-				}
-				*/
 			}
 		}
 		else if (_bBeginCover)

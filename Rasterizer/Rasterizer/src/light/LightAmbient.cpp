@@ -8,9 +8,9 @@ namespace light
 	{
 	}
 
-	LightAmbient::LightAmbient(const Color32 * color)
+	LightAmbient::LightAmbient(const Color32 * color) : 
+		_color(*color)
 	{
-		_color = *color;
 	}
 
 	LightAmbient::~LightAmbient()

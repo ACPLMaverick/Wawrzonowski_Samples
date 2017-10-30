@@ -343,12 +343,7 @@ namespace rendererMav
 					((e21edgeEquation < 0) || (e21isTopLeft && e21edgeEquation <= 0)) &&
 						((e32edgeEquation < 0) || (e32isTopLeft && e32edgeEquation <= 0)) &&
 						((e12edgeEquation < 0) || (e12isTopLeft && e12edgeEquation <= 0))
-						) /*||
-						  (
-						  ((e21edgeEquation > 0) || (e21isTopLeft && e21edgeEquation >= 0)) &&
-						  ((e32edgeEquation > 0) || (e32isTopLeft && e32edgeEquation >= 0)) &&
-						  ((e12edgeEquation > 0) || (e12isTopLeft && e12edgeEquation >= 0))
-						  )*/
+						) 
 					)
 				{
 					// barycentric coords calculation
